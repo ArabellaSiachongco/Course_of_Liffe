@@ -1,0 +1,140 @@
+/* nav  */
+@media (max-width: 940px) {
+  .menu ul {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    max-width: 400px;
+    padding-top: 45px;
+    height: 100%;
+    background: #ecf0f3;
+    box-shadow: 0 5px 10px #b0b0b5;
+    z-index: 12;
+    transition: all 0.3s ease;
+  }
+  .menu ul a {
+    display: block;
+    font-size: 23px;
+    width: 100%;
+    margin-top: 30px;
+    box-shadow: none;
+    text-align: center;
+  }
+  .menu ul a:hover:before {
+    box-shadow: none;
+  }
+  nav label.bars {
+    display: block;
+  }
+  #check:checked ~ label.bars {
+    display: none;
+  }
+  #check:checked ~ ul label.cancel {
+    display: block;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+/* about  */
+@media (max-width: 350) {
+  .span {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    max-width: 400px;
+    padding-top: 45px;
+    height: 100%;
+  }
+}
+
+/* about me 2 grid  */
+
+@media (min-width: 900px) {
+  .intros {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 600px) {
+  .intros {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 590px) {
+  .intros {
+    grid-template-columns: repeat(1, 1fr);
+    min-height: auto;
+  }
+  .p1 {
+    font-size: 35px !important;
+    line-height: 2rem;
+    word-spacing: 3px;
+  }
+  .p2 {
+    margin-top: 8%;
+  }
+}
+
+@media (max-width: 490px) {
+  .intros {
+    grid-template-columns: repeat(1, 1fr);
+    min-height: 250px;
+  }
+  .p1 {
+    font-size: 28px !important;
+    line-height: 2rem;
+    word-spacing: 3px;
+  }
+  .p2 {
+    margin-top: 8%;
+  }
+}
+
+@media (max-width: 390px) {
+  .intros {
+    grid-template-columns: repeat(1, 1fr);
+    min-height: 200px;
+  }
+  .p1 {
+    font-size: 25px !important;
+    line-height: 2rem;
+  }
+  .p2 {
+    margin-top: 8%;
+  }
+}
+
+@media (max-width: 320px) {
+  .intros {
+    grid-template-columns: repeat(1, 1fr);
+    min-height: 150px;
+  }
+  .p1 {
+    font-size: 20px !important;
+    line-height: 2rem;
+  }
+  .p2 {
+    margin-top: 8%;
+  }
+}
+
+/* three grid after the img  */
+@media (min-width: 600px) {
+  .texts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .texts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

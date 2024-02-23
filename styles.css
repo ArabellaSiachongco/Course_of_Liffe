@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Cormorant:wght@300&family=Lato:wght@300&family=Noto+Serif:wght@100;300;400&display=swap");
+@import url(./media.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", "Cormorant " sans-serif;
+}
+
+body {
+  background: #ffffff;
+}
+
+nav {
+  width: 100%;
+  height:60px;
+  position: relative;
+  padding: 12px 0;
+  background: #0a354e;
+}
+
+nav .menu {
+  max-width: 1270px;
+  margin: auto;
+  /* padding: 22px 20px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .logo a {
+  /* font-family: "agbalumo"; */
+  font-family: "Cormorant", serif;
+  font-size: 38px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #efd6ac;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul a {
+  font-family: "Noto Serif", serif;
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #efd6ac;
+  font-weight: 400;
+  display: inline-flex;
+  /* padding: 10px 12px; */
+  position: relative;
+  transition: all 0.3s ease;
+}
+.menu ul a:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset -3px -3px 7px #efd6ac, inset 3px 3px 5px #efd6ac;
+}
+
+.menu ul a:hover {
+  color: #efd6ac;
+}
+
+nav label.button {
+  color: #efd6ac;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+}
+
+nav label.cancel {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  color: #000000;
+}
+
+li {
+  background-color: #0a354e;
+}
+
+#check {
+  display: none;
+}
+
+/* aboout me  */
+
+section {
+  max-width: 1270px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+span {
+  font-family: "Cormorant", serif;
+  font-size: 28px;
+  display: flex;
+  width: 81.13px;
+  height: 39px;
+  letter-spacing: 1px;
+}
+
+.break {
+  height: 2px;
+  background-color: #000000;
+}
+
+/* -- */
+
+.intros {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  transition: ease-in-out;
+}
+
+.intro {
+  padding: 1rem;
+  height: 4rem;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  line-height: 30px;
+  word-spacing: 5px;
+}
+
+.p1 {
+  font-size: 42px;
+  font-family: "Cormorant", serif;
+  font-weight: bold;
+  float: left;
+  line-height: 50px;
+  word-spacing: 5px;
+}
+
+/* about  and hr  */
+
+/* image */
+
+.myself {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+
+/* below the image */
+
+.text1 {
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  height: 4rem;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  line-height: 30px;
+  word-spacing: 5px;
+}
+
+.texts {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
